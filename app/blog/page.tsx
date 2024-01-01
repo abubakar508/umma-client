@@ -2,9 +2,10 @@ import React from 'react'
 import { SanityClient } from '@/lib/sanity'
 import BlogCard from '@/components/BlogCard';
 
-
+export const revalidate = 30
 
 const page = async () => {
+
   async function getData() {
     const query = `
     *[_type == 'blog']| order(_createdAt desc) {
