@@ -55,7 +55,7 @@ export const Ratings = [
         title: 'Years',
         info:[
              {
-            desc: 'Umma tech hub has existed since imemmorial(since UMMA started). Focusing on fostering innovaiton and technoprenuership among our committee',
+            desc: 'Umma tech hub has existed since imemmorial. Focusing on fostering innovaiton and technoprenuership among our committee',
             number: '10 years'
         }
     ]

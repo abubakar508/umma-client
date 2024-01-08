@@ -9,8 +9,7 @@ interface NavMobileProps {
 }
 
 const NavMobile = ({ closemodal}: NavMobileProps) => {
-
-    const pathname = usePathname();
+    const pathname: string = usePathname();
 
   return (
     <div onClick={closemodal} className=" w-full md:hidden md:w-auto" id="navbar-default">

@@ -10,6 +10,17 @@ import { sequence } from '@/constants'
 const NewHero = () => {
   return (
     <>
+    <div className=' absolute w-full h-[450px] lg:h-[500px] top-0'>
+      <Image 
+      src={Umma}
+      quality={100}
+      priority
+      alt='hero-image'
+      width={500}
+      height={500}
+      className=' w-full h-full object-cover'
+      />
+    </div>
     <div className=' flex items-center justify-center'>
     <div className=' h-[450px] w-full bg-umma' />
     </div>
@@ -42,7 +53,7 @@ const NewHero = () => {
           at a whole new level
         </h1>
         {/* subtitle */}
-        <span className=" font-medium text-neutral-800 text-center lg:w-[60%] dark:text-white leading-10 text-sm2">
+        <span className=" font-medium text-neutral-800 text-center lg:w-[60%] dark:text-white leading-10 text-sm2 sm:mx-16">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           sint, quasi, beatae amet nam porro quo debitis ad impedit voluptas
           dolorum sapiente veritatis perferendis culpa minus iste repellendus
@@ -51,7 +62,7 @@ const NewHero = () => {
         <div className=" my-2">
             <CustomButton
             title="Explore More"
-            containerStyles=" bg-neutral-900 px-4 py-3 rounded-md hover:bg-blue-600 dark:text-white text-black font-bold flex items-center gap-3 group"
+            containerStyles=" bg-neutral-900 px-4 py-3 rounded-md hover:bg-blue-600 dark:text-white text-white font-bold flex items-center gap-3 group"
             icon={<FcRightUp2 />}
             />
         </div>

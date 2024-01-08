@@ -4,21 +4,21 @@ import { ModeToggle } from './modeToggle'
 import Link from 'next/link'
 import NavMobile from './NavMobile';
 import { navItems } from '@/constants';
-import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import { UmmaLogo } from '@/public';
+import { NewUmma, } from '@/public';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const pathname = usePathname()
   const [nav, setNav] = useState(false)
   return (
    
-<nav className="bg-white border-gray-200 dark:bg-gray-900">
+<nav className="bg-white border-gray-200 dark:bg-gray-900 z-50 absolute w-full">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <Link href='/'>
       <Image
-      src={UmmaLogo}
-      width={50}
+      src={NewUmma}
+      width={100}
       height={50}
       alt='logo'
       quality={100}

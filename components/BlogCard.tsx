@@ -8,6 +8,7 @@ const BlogCard = ({post, index} : any) => {
   return (
     <div key={index} className=' p-2 w-full md:w-[350px] shadow-md border rounded-lg flex flex-col items-center'>
       <div className=' w-full md:w-[320px] h-[300px] md:h-[350px]'>
+        <Link href={`preview/${post.currentSlug}`} >
         <Image
         src={urlFor(post.titleImage).url()}
         width={200}
@@ -15,6 +16,7 @@ const BlogCard = ({post, index} : any) => {
         alt=''
         className=' w-full h-full object-cover'
         />
+        </Link>
       </div>
         <h1 className=' p-2 text-xl md:text-2xl font-bold dark:text-green-500'>
             {post.title}
